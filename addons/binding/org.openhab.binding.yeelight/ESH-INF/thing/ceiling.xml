@@ -10,6 +10,7 @@
 		<channels>
 			<channel id="brightness" typeId="brightness" />
 			<channel id="colorTemperature" typeId="colorTemperature" />
+			<channel id="brightness" typeId="onOff" />
 		</channels>
 
 		<config-description>

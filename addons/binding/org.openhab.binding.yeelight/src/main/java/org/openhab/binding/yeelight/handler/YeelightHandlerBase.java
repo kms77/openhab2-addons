@@ -147,6 +147,9 @@ public abstract class YeelightHandlerBase extends BaseThingHandler
                 case YeelightBindingConstants.CHANNEL_COLOR_TEMPERATURE:
                     updateState(channelUID, new PercentType(s.getCt()));
                     break;
+                case YeelightBindingConstants.CHANNEL_ON_OFF:
+                    updateState(channelUID, s.isPowerOff() ? OnOffType.ON : OnOffType.OFF);
+                    break;
                 default:
                     break;
             }
@@ -183,6 +186,11 @@ public abstract class YeelightHandlerBase extends BaseThingHandler
                     handleColorTemperatureCommand((PercentType) command);
                 } else if (command instanceof IncreaseDecreaseType) {
                     handleIncreaseDecreaseBrightnessCommand((IncreaseDecreaseType) command);
+                }
+                break;
+            case YeelightBindingConstants.CHANNEL_ON_OFF:
+                if (command instanceof OnOffType) {
+                    handleOnOffCommand((OnOffType) command);
                 }
                 break;
             default:

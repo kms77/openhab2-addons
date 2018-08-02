@@ -9,6 +9,7 @@
 
 		<channels>
 			<channel id="brightness" typeId="brightness" />
+			<channel id="brightness" typeId="onOff" />
 		</channels>
 
 		<config-description>

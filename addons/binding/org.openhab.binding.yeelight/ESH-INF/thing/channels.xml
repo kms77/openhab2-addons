@@ -38,4 +38,15 @@
 		</tags>
 	</channel-type>
 
+	<!-- On Off Channel -->
+	<channel-type id="onOff">
+		<item-type>Switch</item-type>
+		<label>SwitchOnOff</label>
+		<description>The On Off channel allows to control the power of a light.</description>
+		<category>OnOff</category>
+		<tags>
+			<tag>Power</tag>
+		</tags>
+	</channel-type>
+
 </thing:thing-descriptions>

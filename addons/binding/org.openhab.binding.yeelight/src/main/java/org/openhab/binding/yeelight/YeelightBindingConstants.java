@@ -33,6 +33,7 @@ public class YeelightBindingConstants {
     public static final String CHANNEL_BRIGHTNESS = "brightness";
     public static final String CHANNEL_COLOR = "color";
     public static final String CHANNEL_COLOR_TEMPERATURE = "colorTemperature";
+    public static final String CHANNEL_ON_OFF = "onOff";
 
     // Constants used
     public static final int COLOR_TEMPERATURE_MINIMUM = 1700;
